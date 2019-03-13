@@ -1,0 +1,80 @@
+@charset "utf-8";
+/*CSS document*/
+
+.hidden
+{
+	display: none;
+}
+
+/*Sets size and position of site container*/
+.container 
+{
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/*Sets size of all columns*/
+.column
+{
+	height: 300px;
+	flex: 1 1 auto;
+}
+
+/*Makes column 1 pink*/
+.column1
+{
+	background-color: pink;
+}
+
+/*Makes column 2 red*/
+.column2
+{
+	background-color: red;
+}
+
+/*Hides columns 3 and 4*/
+.column3, .column4
+{
+	display: none;
+}
+
+/*Change page layout at 641px*/
+@media screen and (min-width: 641px) 
+{
+	/*Displays children side by side*/
+	.container
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	/*Shows columns 3 and 4*/
+	.column3, .column4
+	{
+		display: block;
+	}
+
+	/*Makes column 1 blue*/
+	.column1
+	{
+		background-color: blue;
+	}
+
+	/*Makes column 2 purple*/
+	.column2
+	{
+		background-color: purple;
+	}
+
+	/*Makes column 3 grey*/
+	.column3
+	{
+		background-color: grey;
+	}
+
+	/*Makes column 4 brown*/
+	.column4
+	{
+		background-color: brown;
+	}
+}
